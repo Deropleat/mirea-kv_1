@@ -6,7 +6,7 @@
 class cl_application : public cl_base
 {
 public:
-	cl_application(cl_application* p_head_object = nullptr, std::string s_object_name = "Base_object");
+	cl_application(cl_application* = nullptr, std::string = "Base_object");
 
 	void bild_tree_objects();
 	int exec_app();

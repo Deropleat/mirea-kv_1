@@ -6,8 +6,8 @@ cl_application::cl_application(cl_application* p_head_object, std::string s_obje
 
 void cl_application::bild_tree_objects()
 {
-	cl_base* last_head = this, *last_sub = nullptr;
 	std::string name, head, sub;
+	cl_base* last_head = this, *last_sub = nullptr;
 	
 	std::cin >> name;
 	change_object_name(name);
@@ -16,7 +16,7 @@ void cl_application::bild_tree_objects()
 		std::cin >> head >> sub;
 		if (head == sub) break;
 
-		if (last_sub && head == last_head->get_object_name()) last_head = last_sub;
+		if (last_sub && head == last_sub->get_object_name()) last_head = last_sub;
 		if (!last_sub->get_sub_object_by_name(sub) && head == last_head->get_object_name()) last_sub = new cl_base_2(last_head, sub);
 	}
 }

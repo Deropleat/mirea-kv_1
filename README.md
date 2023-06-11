@@ -138,4 +138,5 @@ Object_3  Object_4  Object_5
 ```
 
 ---
-### Автор - https://vk.com/aptekkkar
+### Автор - https://vk.com/aptekkkar 
+   + Прямой путь по ID: https://vk.com/id169607065
